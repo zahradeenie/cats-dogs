@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    height: 70%;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/**/
+
+.cats,
+.dogs {
+    
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 50%;
+    overflow: hidden;
+    padding: 2rem;   
+}
+
+button {
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 3px;
+    
+}
