@@ -1,9 +1,19 @@
+let catVote = 0;
+let dogVote = 0;
 
-const catCounterButton = document.getElementByClass("cat-counter");
 
-document.catCounterButton.addEventListener()
+const catButton = document.querySelector(".cats button");
+let catCounter = document.querySelector(".cats h2");
 
-function catVote() {
-    catCounter(onclick) 
-    return catCounter;
-};
+catButton.addEventListener("click", () => {
+    catVote += 1;
+    catCounter.textContent = catVote;
+});
+
+const dogButton = document.querySelector(".dogs button");
+let dogCounter = document.querySelector(".dogs h2");
+
+dogButton.addEventListener("click", () => {
+    dogVote++;
+    dogCounter.textContent = dogVote;
+});
