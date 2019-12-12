@@ -17,3 +17,12 @@ dogButton.addEventListener("click", () => {
     dogVote++;
     dogCounter.textContent = dogVote;
 });
+
+const hateButton = document.querySelector(".hate-button");
+const hateModal = document.querySelector(".hate-modal");
+const modalBg = document.querySelector(".modal-bg");
+
+hateButton.addEventListener("click", () => {
+    modalBg.classList.add("is-visible");
+});
+
