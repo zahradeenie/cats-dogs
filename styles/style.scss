@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: #f9f6f7;
+    font-family: sans-serif;
+}
+button:focus {
+    outline: none;
+}
+
+/* header */
+.header {
+    width: 100%;
+    background: #f1d6ab;    
+}
+.header h1 {
+    text-align: center;
+    font-size: 28px;
+    font-family: sans-serif;
+    padding: 3rem;
+}
+.secret-text {
+    font-size: 10px;
+    left: 15rem;
+    top: 3rem;
+    position: relative;
+    display: inline-block;
+    color: #f9f6f7;
+}
+.secret-text:hover {
+    color: #000;
+}
+
+/* content container */
+.container {
+    display: flex;
+    margin: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* cat and dog items */
+.cats, .dogs {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cats img, .dogs img {
+    width: 100%;
+}
+h2 {
+    margin: 1rem;
+}
+button {
+    border-radius: 3px;
+    padding: 10px;
+    width: 50%;
+    font-family: sans-serif;
+    background: #f1d6ab;
+    border: none;
+    margin: 1rem;
+    box-shadow: 1px 2px 5px #b4b4b4;
+    cursor: pointer;
+    font-size: 14px;
+}
+button:hover {
+    transform: scale(1.02);
+    background: #ffc655;
+}
+
+/* hate both section */
+.hate-both {
+    transform: scale(0.5);
+    color: #f9f6f7;
+}
+.hate-button {
+    color: #f9f6f7;
+    background: #f9f6f7;
+    box-shadow: none;
+}
+.hate-text:hover {
+    color: #000;
+}
+.hate-button:hover {
+    background: #ffc655;   
+    box-shadow: 1px 2px 5px #b4b4b4;
+    color: #000;
+}
+.modal-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+.hate-modal {
+    width: 20%;
+    height: 10%;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
