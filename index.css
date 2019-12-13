@@ -23,6 +23,17 @@ button:focus {
     font-family: sans-serif;
     padding: 3rem;
 }
+.secret-text {
+    font-size: 10px;
+    left: 15rem;
+    top: 3rem;
+    position: relative;
+    display: inline-block;
+    color: #f9f6f7;
+}
+.secret-text:hover {
+    color: #000;
+}
 
 /* content container */
 .container {
@@ -96,6 +107,7 @@ button:hover {
     align-items: center;
     background: rgba(0, 0, 0, 0.8);
     cursor: pointer;
+    transition: ease 0.2s;
 }
 .hate-modal {
     width: 20%;
