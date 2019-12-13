@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+$btn-color: #f1d6ab;
+$btn-shadow: 1px 2px 5px #b4b4b4;
+$btn-color-hover: #ffc655;
+$primary-bg-color: #f1d6ab;
+
+body {
+    background: #f9f6f7;
+    font-family: sans-serif;
+    height: 100%;
+}
+button:focus {
+    outline: none;
+}
+
+// header 
+.header {
+    width: 100%;
+    background: $primary-bg-color;    
+
+    h1 {
+        text-align: center;
+        font-size: 25px;
+        font-family: sans-serif;
+        padding: 2rem;
+    }
+}
+
+.secret-text {
+    font-size: 10px;
+    left: 15rem;
+    top: 3rem;
+    position: relative;
+    display: inline-block;
+    color: #f9f6f7;
+}
+.secret-text:hover {
+    color: #000;
+}
+
+//  content container
+.container {
+    display: flex;
+    margin: 5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+// cat and dog items
+.cats, .dogs {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+    h2 {
+        margin: 1rem;
+    }
+    button {
+        border-radius: 3px;
+        padding: 10px;
+        width: 50%;
+        font-family: sans-serif;
+        background: $btn-color;
+        border: none;
+        margin: 1rem;
+        box-shadow: $btn-shadow;
+        cursor: pointer;
+        font-size: 14px;
+        &:hover {
+            transform: scale(1.02);
+            background: $btn-color-hover;
+        }
+    }
+}
+
+// hate button/text
+.hate-both {
+    transform: scale(0.5);
+    color: #f9f6f7;
+    button {
+        color: #f9f6f7;
+        background: #f9f6f7;
+        border: none;
+        padding: 10px 20px;
+        display: inline-block;
+        position: relative;
+        bottom: 3rem;
+        border-radius: 3px;
+        &:hover {
+            background: $btn-color-hover;   
+            color: #000;
+            box-shadow: $btn-shadow;
+            cursor: pointer;
+        }
+    }
+}
+.hate-text:hover {
+    color: #000;
+}
+
+// secret modal
+.modal-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: ease 0.2s;
+    z-index: 2;
+}
+.hate-modal {
+    width: 20%;
+    height: 10%;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+// footer
+footer {
+    display: flex;
+    justify-content: center;
+    background: $primary-bg-color;
+    p {
+        font-size: 10px;
+        padding: 0.5rem;
+    }
+    a {
+        text-decoration: none;
+        border-bottom: 2px solid $btn-color-hover;
+        color: #000; 
+    }
+}
