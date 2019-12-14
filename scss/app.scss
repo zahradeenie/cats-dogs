@@ -22,25 +22,12 @@ button:focus {
 .header {
     width: 100%;
     background: $primary-bg-color;    
-
     h1 {
         text-align: center;
         font-size: 25px;
         font-family: sans-serif;
         padding: 2rem;
     }
-}
-
-.secret-text {
-    font-size: 10px;
-    left: 15rem;
-    top: 3rem;
-    position: relative;
-    display: inline-block;
-    color: #f9f6f7;
-}
-.secret-text:hover {
-    color: #000;
 }
 
 //  content container
@@ -83,7 +70,7 @@ button:focus {
     }
 }
 
-// hate button/text
+// secret hate modal
 .hate-both {
     transform: scale(0.5);
     color: #f9f6f7;
@@ -95,6 +82,7 @@ button:focus {
         display: inline-block;
         position: relative;
         bottom: 3rem;
+        left: 50%;
         border-radius: 3px;
         &:hover {
             background: $btn-color-hover;   
@@ -107,8 +95,18 @@ button:focus {
 .hate-text:hover {
     color: #000;
 }
+.secret-text {
+    font-size: 10px;
+    left: 50%;
+    top: 3rem;
+    position: relative;
+    display: inline-block;
+    color: #f9f6f7;
+    &:hover {
+        color: #000;
+    }
+}
 
-// secret modal
 .modal-bg {
     position: fixed;
     top: 0;
