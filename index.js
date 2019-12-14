@@ -43,7 +43,6 @@ dogButton.addEventListener("click", () => {
     dogCounter.textContent = dogVote;
     playDogSound();
     scale();
-
 });
 
 // Functionality of modal popup for secret button
