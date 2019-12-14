@@ -12,22 +12,20 @@
     <div class="header">
         <h1>Let's finally put it to rest.<br>Which is loved more, cats or dogs?</h1>
     </div>
-
     <p class="secret-text">There's a secret button somewhere...</p>
-
 
     <div class="container">
         <div class="cats">
             <img src="https://i.imgur.com/hSePed2.png" alt="cat">
             <h2>0</h2>
-            <button>+1 for cats</button>
+            <button data-sound="cat">+1 for cats</button data-sound="cat">
         </div>
 
 
         <div class="dogs">
             <img src="https://i.imgur.com/Qdm7uOq.png" alt="dog">
             <h2>0</h2>
-            <button>+1 for dogs</button>
+            <button data-sound="dog">+1 for dogs</button>
         </div>
 
     </div>
@@ -42,6 +40,16 @@
         </div>
     </div>
 
+    <audio data-sound="cat" src="/sounds/meow_1.mp3"></audio>
+    <audio data-sound="cat" src="/sounds/meow_2.mp3"></audio>
+    <audio data-sound="cat" src="/sounds/meow_3.mp3"></audio>
+    <audio data-sound="cat" src="/sounds/meow_4.mp3"></audio>
+    <audio data-sound="cat" src="/sounds/meow_5.mp3"></audio>
+    <audio src="/sounds/woof_1.mp3" data-sound="dog"></audio>
+    <audio src="/sounds/woof_2.mp3" data-sound="dog"></audio>
+    <audio src="/sounds/woof_3.mp3" data-sound="dog"></audio>
+    <audio src="/sounds/woof_4.mp3" data-sound="dog"></audio>
+    <audio src="/sounds/woof_5.mp3" data-sound="dog"></audio>
 
 
     <footer>

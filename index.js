@@ -9,14 +9,21 @@ function scale() {
     catCounter.style.transform = `scale(${catScale.toFixed(3)})`;
 }
 
-
 // Cat love counter
-const catButton = document.querySelector(".cats button");
+const catButton = document.querySelector("[data-sound='cat']");
 let catCounter = document.querySelector(".cats h2");
+
+function playCatSound() {
+    let audio = document.querySelectorAll("audio[data-sound='cat']");
+    for (let sound of audio) {
+        sound.play();
+    }
+};
 
 catButton.addEventListener("click", () => {
     catVote += 1;
     catCounter.textContent = catVote;
+    playCatSound();
     scale();
 });
 
@@ -24,9 +31,17 @@ catButton.addEventListener("click", () => {
 const dogButton = document.querySelector(".dogs button");
 let dogCounter = document.querySelector(".dogs h2");
 
+function playDogSound() {
+    let audio = document.querySelectorAll("audio[data-sound='dog']");
+    for (let sound of audio) {
+        sound.play();
+    }
+};
+
 dogButton.addEventListener("click", () => {
     dogVote++;
     dogCounter.textContent = dogVote;
+    playDogSound();
     scale();
 
 });
