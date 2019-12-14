@@ -1,0 +1,26 @@
+{
+  "name": "cats-dogs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.7"
+  },
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zahradeenie/cats-dogs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zahradeenie/cats-dogs/issues"
+  },
+  "homepage": "https://github.com/zahradeenie/cats-dogs#readme"
+}
