@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 $btn-color: #f1d6ab;
@@ -68,6 +67,9 @@ button:focus {
             background: $btn-color-hover;
         }
     }
+}
+.dog-img {
+    transform: rotateY(180deg);
 }
 
 // secret hate modal
@@ -150,5 +152,25 @@ footer {
         text-decoration: none;
         border-bottom: 2px solid $btn-color-hover;
         color: #000; 
+    }
+}
+
+// Animation for reaching milestones
+.votes-10 {
+    background: red;
+}
+.votes-50 {
+    background: yellow;
+}
+.votes-100 {
+    background: yellow;
+}
+
+@keyframes votes-10 {
+    from {
+
+    }
+    to {
+
     }
 }
