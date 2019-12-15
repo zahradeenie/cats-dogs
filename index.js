@@ -45,18 +45,22 @@ dogButton.addEventListener("click", () => {
     scale();
 });
 
-// Functionality of modal popup for secret button
+// Modal popup for secret button
 const hateButton = document.querySelector(".hate-button");
 const modalBg = document.querySelector(".modal-bg");
 
-let audio = document.querySelectorAll("audio[data-sound='what']");
-
-
 hateButton.addEventListener("click", () => {
     modalBg.classList.add("is-visible");
+    let audio = document.querySelector("audio[data-sound='what']");
     audio.play();
 });
 
 modalBg.addEventListener("click", () => {
     modalBg.classList.remove("is-visible");
 })
+
+// Add animations when milestones reached
+
+if (catVote || dogVote === 10) {
+
+}
