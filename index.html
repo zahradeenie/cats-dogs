@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./scss/app.scss" type="text/css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap" rel="stylesheet">
+    <title>Cats vs Dogs</title>
 </head>
 
 <body>
@@ -13,17 +14,15 @@
         <h1>Let's finally put it to rest.<br>Which is loved more, cats or dogs?</h1>
     </div>
     <p class="secret-text">There's a secret button somewhere...</p>
-
     <div class="container">
         <div class="cats">
-            <img src="https://i.imgur.com/hSePed2.png" alt="cat">
+            <img class="cat-img" src="https://i.imgur.com/P5ozQXC.png" alt="cat">
             <h2>0</h2>
             <button data-sound="cat">+1 for cats</button data-sound="cat">
         </div>
 
-
         <div class="dogs">
-            <img src="https://i.imgur.com/Qdm7uOq.png" alt="dog">
+            <img class="dog-img" src="https://i.imgur.com/Jz4d74s.png" alt="dog">
             <h2>0</h2>
             <button data-sound="dog">+1 for dogs</button>
         </div>
@@ -31,7 +30,7 @@
     </div>
 
     <div class="hate-both">
-        <button class="hate-button">I hate both</button>
+        <button data-sound="what" class="hate-button">I hate both</button>
     </div>
 
     <div class="modal-bg">
@@ -45,15 +44,16 @@
     <audio data-sound="cat" src="/sounds/meow_3.mp3"></audio>
     <audio data-sound="cat" src="/sounds/meow_4.mp3"></audio>
     <audio data-sound="cat" src="/sounds/meow_5.mp3"></audio>
-    <audio src="/sounds/woof_1.mp3" data-sound="dog"></audio>
-    <audio src="/sounds/woof_2.mp3" data-sound="dog"></audio>
-    <audio src="/sounds/woof_3.mp3" data-sound="dog"></audio>
-    <audio src="/sounds/woof_4.mp3" data-sound="dog"></audio>
-    <audio src="/sounds/woof_5.mp3" data-sound="dog"></audio>
-
+    <audio data-sound="dog" src="/sounds/woof_1.mp3"></audio>
+    <audio data-sound="dog" src="/sounds/woof_2.mp3"></audio>
+    <audio data-sound="dog" src="/sounds/woof_3.mp3"></audio>
+    <audio data-sound="dog" src="/sounds/woof_4.mp3"></audio>
+    <audio data-sound="dog" src="/sounds/woof_5.mp3"></audio>
+    <audio data-sound="what" src="/sounds/what.mp3"></audio>
 
     <footer>
-        <p>The first live project in <a href="https://github.com/zahradeenie">my coding journey</a></p>
+        <p>This is the <span>first live project</span> in <a href="https://github.com/zahradeenie">my coding journey</a>
+        </p>
     </footer>
 
     <script src="index.js"></script>
