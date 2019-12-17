@@ -57,6 +57,7 @@ button:focus {
     align-items: center;
     img {
         width: 100%;
+        z-index: -1;
     }
     h2 {
         margin: 1rem;
@@ -84,16 +85,17 @@ button:focus {
 
 @media only screen and (max-width: 480px) {
     .container {
-        flex-direction: row;
         flex-wrap: wrap;
-        margin: 1rem auto;
+        margin: auto;
     }
     .cats, .dogs {
         width: 100%;
         flex-wrap: wrap;
-        margin-top: 1.5rem;
         img {
-            width: 70%;
+            width: 100%;
+        }
+        h2 {
+            font-size: 18px;
         }
     }
 }
@@ -192,61 +194,86 @@ footer {
 }
 
 // Animation for reaching milestones - cats
+$bg-repeat: no-repeat;
+
 .catvotes10 {
     background: url(https://i.gifer.com/PYe.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: left bottom;
 }
 .catvotes50 {
     background: url(https://i.gifer.com/PYw.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: right bottom;
+    background-size: 30%;
 }
 .catvotes100 {
     background: url(https://i.gifer.com/JQd.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: left top;
+    background-size: 30%;
 }
 .catvotes250 {
     background: url(https://i.gifer.com/19wE.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: right bottom;
+    background-size: 50%;
 }
 .catvotes500 {
     background: url(https://i.gifer.com/14Sz.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: left top;
+    background-size: 60%;
 }
 .catvotes750 {
     background: url(https://i.gifer.com/nVK.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: center;
+    background-size: 90%;
 }
 .catvotes1000 {
     background: url(https://i.gifer.com/6kZ.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: center;
 }
 
 // Animation for reaching milestones - dogs
 .dogvotes10 {
     background: url(https://i.gifer.com/nUk.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: left bottom;
+    background-size: 20%;
 }
 .dogvotes50 {
     background: url(https://i.gifer.com/yD.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: right;
+    background-size: 40%;
 }
 .dogvotes100 {
     background: url(https://i.gifer.com/K9r.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: left bottom;
+    background-size: 40%;
 }
 .dogvotes250 {
     background: url(https://i.gifer.com/2a9p.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: left bottom;
+    background-size: 60%;
 }
 .dogvotes500 {
     background: url(https://i.gifer.com/3MfJ.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: center;
 }
 .dogvotes750 {
     background: url(https://i.gifer.com/19ya.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: left top;
 }
 .dogvotes1000 {
     background: url(https://i.gifer.com/4m3k.gif);
-    background-repeat: no-repeat;
+    background-repeat: $bg-repeat;
+    background-position: left;
 }
