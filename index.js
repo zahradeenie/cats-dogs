@@ -61,54 +61,62 @@ modalBg.addEventListener("click", () => {
     modalBg.classList.remove("is-visible");
 });
 
+// Milestone animations
 function votingMilestonesCat() {
-    let contentContainer = document.querySelector(".container");
+    let catContainer = document.querySelector(".cats");
     if (catVote == 10) {
-        contentContainer.classList.add("catvotes10");
-        setTimeout(function () { contentContainer.classList.remove("catvotes10"); }, 1500);
+        catContainer.classList.add("catvotes10");
+        setTimeout(function () { catContainer.classList.remove("catvotes10"); }, 1500);
     } else if (catVote == 50) {
-        contentContainer.classList.add("catvotes50");
-        setTimeout(function () { contentContainer.classList.remove("catvotes50"); }, 1500);
+        catContainer.classList.add("catvotes50");
+        setTimeout(function () { catContainer.classList.remove("catvotes50"); }, 1500);
     } else if (catVote == 100) {
-        contentContainer.classList.add("catvotes100");
-        setTimeout(function () { contentContainer.classList.remove("catvotes100"); }, 1500);
+        catContainer.classList.add("catvotes100");
+        setTimeout(function () { catContainer.classList.remove("catvotes100"); }, 1500);
     } else if (catVote == 250) {
-        contentContainer.classList.add("catvotes250");
-        setTimeout(function () { contentContainer.classList.remove("catvotes250"); }, 1500);
+        catContainer.classList.add("catvotes250");
+        setTimeout(function () { catContainer.classList.remove("catvotes250"); }, 1500);
     } else if (catVote == 500) {
-        contentContainer.classList.add("catvotes500");
-        setTimeout(function () { contentContainer.classList.remove("catvotes500"); }, 1500);
+        catContainer.classList.add("catvotes500");
+        setTimeout(function () { catContainer.classList.remove("catvotes500"); }, 1500);
     } else if (catVote == 750) {
-        contentContainer.classList.add("catvotes750");
-        setTimeout(function () { contentContainer.classList.remove("catvotes750"); }, 1500);
+        catContainer.classList.add("catvotes750");
+        setTimeout(function () { catContainer.classList.remove("catvotes750"); }, 1500);
     } else if (catVote == 1000) {
-        contentContainer.classList.add("catvotes1000");
-        setTimeout(function () { contentContainer.classList.remove("catvotes1000"); }, 1500);
+        catContainer.classList.add("catvotes1000");
+        setTimeout(function () { catContainer.classList.remove("catvotes1000"); }, 1500);
     };
 }
 
 function votingMilestonesDog() {
-    let contentContainer = document.querySelector(".container");
+    let dogContainer = document.querySelector(".dogs");
     if (dogVote == 10) {
-        contentContainer.classList.add("dogvotes10");
-        setTimeout(function () { contentContainer.classList.remove("dogvotes10"); }, 1500);
+        dogContainer.classList.add("dogvotes10");
+        setTimeout(function () { dogContainer.classList.remove("dogvotes10"); }, 1500);
     } else if (dogVote == 50) {
-        contentContainer.classList.add("dogvotes50");
-        setTimeout(function () { contentContainer.classList.remove("dogvotes50"); }, 1500);
+        dogContainer.classList.add("dogvotes50");
+        setTimeout(function () { dogContainer.classList.remove("dogvotes50"); }, 1500);
     } else if (dogVote == 100) {
-        contentContainer.classList.add("dogvotes100");
-        setTimeout(function () { contentContainer.classList.remove("dogvotes100"); }, 1500);
+        dogContainer.classList.add("dogvotes100");
+        setTimeout(function () { dogContainer.classList.remove("dogvotes100"); }, 1500);
     } else if (dogVote == 250) {
-        contentContainer.classList.add("dogvotes250");
-        setTimeout(function () { contentContainer.classList.remove("dogvotes250"); }, 1500);
+        dogContainer.classList.add("dogvotes250");
+        setTimeout(function () { dogContainer.classList.remove("dogvotes250"); }, 1500);
     } else if (dogVote == 500) {
-        contentContainer.classList.add("dogvotes500");
-        setTimeout(function () { contentContainer.classList.remove("dogvotes500"); }, 1500);
+        dogContainer.classList.add("dogvotes500");
+        setTimeout(function () { dogContainer.classList.remove("dogvotes500"); }, 1500);
     } else if (dogVote == 750) {
-        contentContainer.classList.add("dogvotes750");
-        setTimeout(function () { contentContainer.classList.remove("dogvotes750"); }, 1500);
+        dogContainer.classList.add("dogvotes750");
+        setTimeout(function () { dogContainer.classList.remove("dogvotes750"); }, 1500);
     } else if (dogVote == 1000) {
-        contentContainer.classList.add("dogvotes1000");
-        setTimeout(function () { contentContainer.classList.remove("dogvotes1000"); }, 1500);
+        dogContainer.classList.add("dogvotes1000");
+        setTimeout(function () { dogContainer.classList.remove("dogvotes1000"); }, 1500);
     };
 }
+
+
+// const catButton = document.querySelector("[data-sound='cat']");
+
+// for (let i = 0; i < 49; i++) {
+//     catButton.click();
+// }
